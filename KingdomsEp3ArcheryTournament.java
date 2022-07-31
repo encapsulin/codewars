@@ -1,3 +1,16 @@
+/*
+Task
+You are given the array (target archery) of strings of asterisks (for better visibility) and letters(arrows hitting the target). You should count the number of points of each kind of arrow(lowercase letters), sort them and return the array of the sorted letters. Also, it may happen that two arrows of the same kind end up at the same position. If that happens, you'll see an uppercase letter instead.
+Example 2:
+    target:
+    ["z*B",
+     "*a*",
+     "**z"] 
+   
+    return [b, z, a]
+because: b = 2 points(2 arrows), z = 2 points(2 arrows) and a = 2(1 arrow).
+*/
+
 package codewars;
 
 import java.util.*;
