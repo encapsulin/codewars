@@ -1,3 +1,19 @@
+/*
+DESCRIPTION:
+Input
+a string strng of n positive numbers (n = 0 or n >= 2)
+Let us call weight of a number the sum of its digits. For example 99 will have "weight" 18, 100 will have "weight" 1.
+
+Two numbers are "close" if the difference of their weights is small.
+
+Task:
+For each number in strng calculate its "weight" and then find two numbers of strng that have:
+
+the smallest difference of weights ie that are the closest
+with the smallest weights
+and with the smallest indices (or ranks, numbered from 0) in strng
+*/
+
 package codewars;
 
 import java.util.*;
@@ -53,7 +69,6 @@ public class ClosestWeight {
                 intReturn[0][0] = list.get(i).weight;
                 intReturn[0][1] = list.get(i).index;
                 intReturn[0][2] = list.get(i).i;
-//                System.out.println(intReturn[0]);
 
                 intReturn[1][0] = list.get(i+1).weight;
                 intReturn[1][1] = list.get(i+1).index;
@@ -65,7 +80,7 @@ public class ClosestWeight {
     }
 
     static class Entry {
-        //        String s;
+
         int i;
         int weight;
         int index;
